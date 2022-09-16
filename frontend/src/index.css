@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(221, 221, 221)!important; 
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+nav {
+  background-color: rgb(240, 240, 240);
+  height: 86px;
+  list-style-type: none;
+  padding: 0px 80px 0px 80px;
+  overflow: hidden;
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* justify-content: center;
+  align-items: center; */
+  /* background-color: #333; */
+  /* position:fixed; */
+}
+.figure {
+  text-align: center;
+}
+
+li {
+  flex: 0 0 100px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+li a {
+  font-family: neue-haas-unica, sans-serif;
+  font-weight: 900;
+  font-size: 0.9375rem;
+  text-transform: uppercase;
+  padding: 4px 7px;
+  display: inline-block;
+  color: rgb(129, 63, 63);
+  white-space: nowrap;
+  display: flex;
+  /* color: white; */
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  align-content: center;
+}
+
+li a:hover {
+  background-color: rgb(129, 63, 63);
+  color: white;
+}
+
+/* .header-secondary-nav-logo {
+  display: flex; 
+} */
+.header-bar__menu {
+  height: 34px;
+  width: 65px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  justify-self: start;
+}
+
+.navLinks {
+  /* height: 40px; */
+  /* margin-left: 700px; */
+  margin: 0 auto;
+  /* margin-right: 100px; */
+  flex: 0 0 40%;
+  justify-content: center;
+  display: flex;
+
+  /* background-color: rgb(165, 165, 165); */
+}
+
+.wrapper {
+  position: fixed;
+  top: 0;
+  /*left: -100%;*/
+  right: -100%;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  /*background: linear-gradient(90deg, #f92c78, #4114a1);*/
+  /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
+  /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%);*/
+  transition: all 0.6s ease-in-out;
+  z-index: 2;
+}
+#active:checked ~ .wrapper {
+  /*left: 0;*/
+  right: 0;
+}
+
+
+.homeTitle {
+  text-align: center;
+  font-size: 90px;
+}
+
+p {
+  font-size: 25px;
+}
+
+.homeMain {
+  margin-top: 100px;
+}
+
+.mapArea {
+  text-align: center;
+}
+
+#places {
+  padding-left: 320px;
+}
